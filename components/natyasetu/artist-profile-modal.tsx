@@ -12,3 +12,22 @@ type ArtistProfileModalProps = {
   isOpen: boolean
   onClose: () => void
 }
+type ArtistProfileModalProps = {
+  artist: Artist | null
+  isOpen: boolean
+  onClose: () => void
+}
+
+export function ArtistProfileModal({ artist, isOpen, onClose }: ArtistProfileModalProps) {
+  const { isAuthenticated, openAuthModal } = useAuth()
+  const [isFollowing, setIsFollowing] = useState(false)
+
+  if (!isOpen || !artist) return null
+
+  const handleFollow = () => {
+    if (!isAuthenticated) {
+      openAuthModal("signup")
+      return
+    }
+    setIsFollowing(!isFollowing)
+  }
