@@ -66,9 +66,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     // Simulate Google login
     await new Promise((resolve) => setTimeout(resolve, 1000))
     setUser({
-      id: "google",
-      name: "Vidyankshini",
-      email: "vidyankshini@gmail.com",
+      id: "google-1",
+      name: "Theatre Lover",
+      email: "user@gmail.com",
       avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=google",
     })
     setShowAuthModal(false)
