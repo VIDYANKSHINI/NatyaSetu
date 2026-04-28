@@ -78,4 +78,33 @@ natyasetu/
 
 ---
 
+## Getting Started
+
+### Prerequisites
+- Node.js 18.17 or later
+- pnpm (recommended) or npm
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/natyasetu.git
+   cd natyasetu
+   ```
+
+2. **Install dependencies**
+   ```bash
+   pnpm install
+   ```
+
+3. **Run the development server**
+   ```bash
+   pnpm dev
+   ```
+
+4. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+
+
 
