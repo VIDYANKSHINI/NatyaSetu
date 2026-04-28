@@ -105,6 +105,13 @@ natyasetu/
 4. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000)
 
+### Build for Production
 
+```bash
+pnpm build
+pnpm start
+```
+
+---
 
 
