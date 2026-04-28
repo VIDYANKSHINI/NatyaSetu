@@ -34,4 +34,48 @@
 | **Charts** | Recharts |
 | **Package Manager** | pnpm |
 
+---
+
+## Project Structure
+
+```
+natyasetu/
+├── app/
+│   ├── globals.css          # Global styles and Tailwind configuration
+│   ├── layout.tsx           # Root layout with metadata
+│   └── page.tsx             # Main landing page
+├── components/
+│   ├── natyasetu/           # Feature-specific components
+│   │   ├── header.tsx       # Navigation header
+│   │   ├── hero-section.tsx # Hero with video background
+│   │   ├── search-section.tsx
+│   │   ├── search-results.tsx
+│   │   ├── featured-events.tsx
+│   │   ├── artists-section.tsx
+│   │   ├── why-section.tsx
+│   │   ├── how-it-works.tsx
+│   │   ├── testimonials.tsx
+│   │   ├── cta-section.tsx
+│   │   ├── footer.tsx
+│   │   ├── auth-modal.tsx
+│   │   ├── artist-profile-modal.tsx
+│   │   └── event-detail-modal.tsx
+│   ├── ui/                  # Reusable UI components (shadcn/ui)
+│   └── theme-provider.tsx   # Theme context provider
+├── lib/
+│   ├── auth-context.tsx     # Authentication context
+│   ├── search-data.ts       # Mock data and search logic
+│   └── utils.ts             # Utility functions
+├── hooks/
+│   ├── use-mobile.ts        # Mobile detection hook
+│   └── use-toast.ts         # Toast notification hook
+├── public/
+│   ├── hero-theatre-bg.mp4  # Hero background video
+│   └── images/              # Static images
+└── styles/
+    └── globals.css          # Additional global styles
+```
+
+---
+
 
